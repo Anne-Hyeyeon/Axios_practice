@@ -17,3 +17,7 @@ localhost:3000, localhost:4500의 origin이 다르다!
 리액트는 처음 컴포넌트가 실행이 될 때, 순차적으로 명령을 실행하는데. setTodoList로 상태를 바꿧을 때 리렌더링이 미친듯이 일어남!
 - 페치가 리렌더링 될때마다 실행되도록 코드가 짜여있음. 따라서 페치는 최초로 렌더링이 될 때만 실행되면 좋다!
 - useEffect에 fetch 하는 이유 : 첫 렌더링될때만 데이터를 가져오도록 하기 위해.
+- headers에다가 Content-Type application/json 추가하면 input으로 입력되는 정보 받아올 수 있음.
+- todo에 추가했는데 왜 업뎃이 안되냐!! fetch가 끝났을 때 또 받아오는 코드를 짠다.
+- axios의 경우, header에 contents type같은거 생략... post 등의 요청도 간단하게!
+- 리액트 쿼리..?
